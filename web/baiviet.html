@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+            
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="color: yellow; ">WebSiteName</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Trang chủ</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Chọn năm học<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Năm 1</a></li>
+                <li><a href="#">Năm 2</a></li>
+                <li><a href="#">Năm 3</a></li>
+                <li><a href="#">Năm 4</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          <form class="navbar-form navbar-left" action="#" style="margin-left: 160px;">
+            <div class="input-group" style="width: 550px;">
+              <input type="text" class="form-control" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="navbar-form navbar-left " style="margin-left: 550px;">
+            <a class="dropdown-toggle hidden-arrow" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40" alt="Black and White Portrait of a Man" loading="lazy" style="border-radius: 50%;"/>
+            </a>
+         
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-left: 1700px;margin-top: -35px;" >
+              <a class="dropdown-item" href="#">My profile</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+        </div>
+        </div>
+      </nav>
+    
+<!--       
+      <hr  width="30%" style="margin: 50px; padding-left: 1100px;"> -->
+      
+     <!-- hiệu ứng backround -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- slide -->
+    <ul class="nav navbar-nav" style="background-color: white;">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Môn<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Môn 1</a></li>
+          <li><a href="#">Môn 2</a></li>
+          <li><a href="#">Môn 3</a></li>
+          <li><a href="#">Môn 4</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    <!-- <div class="content3">
+          <div class="post-feed-item" style="background-color: white;">
+                <div class="form-group">
+                    <a class="dropdown-toggle hidden-arrow" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" height="80" width="80" style="border-radius: 50%;margin-top: 50px; margin-right: 900px;">
+                    </a>
+                </div>
+                <div class="form-group"style="margin-right: 750px; margin-top: -150px;padding: 50px;">
+                    <h4><a href="#">Tên</a></h4>
+                </div>
+                <div class="form-group"style="margin-right: 740px; margin-top: -120px;padding: 50px;">
+                    <h6>Thời gian</h6>
+                </div>
+                <div class="form-group"style="margin-left: 80px; margin-top: -100px;padding: 50px;">
+                    <h4><a href="#">Bài viết</a></h4>
+                </div>
+                
+                <div class="form-group"style="margin-left: 80px; margin-top: -100px;padding: 50px;">
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#binhluan">Bình luận</button>
+                    <div id="binhluan" class="collapse">
+                        <input type="text" placeholder="Viết bình luận">
+                    <button type="submit">Gửi</button>
+                    </div>
+                </div>
+                
+                <div class="form-group"style="margin-left: 1000px; margin-top: -250px;padding: 50px;" onclick="tang()">
+                        <a href="#" class="btn btn-success" id="tang" >
+                        <span class="glyphicon glyphicon-arrow-up" ></span>
+                    </a>
+                </div>
+                <div class="form-group"style="margin-left: 1000px; margin-top: -100px;padding: 50px;" >
+                    <p id ="vote">0</p>
+                </div>
+                <div class="form-group" style="margin-left: 1000px; margin-top: -100px;padding: 50px;" onclick="giam()">
+                    <a href="#" class="btn btn-danger" id="giam">
+                        <span class="glyphicon glyphicon-arrow-down"></span>
+                    </a>
+                </div>
+              </div>
+    </div>
+    <div class="content">
+    <div class="container">
+      <div class="row grid-demo">
+          <div class="col-md-12">
+              <header>
+                <div class="form-group">
+                  <a class="dropdown-toggle hidden-arrow" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" height="80" width="80" style="border-radius: 50%;margin-right: 100%;">
+                  </a>
+              </div>
+              <div class="form-group"style="margin-right: 900px; margin-top: -120px;">
+                <h4><a href="#">Tên</a></h4>
+              </div>
+              <div class="form-group"style="margin-right: 800px; margin-top: -31px;">
+                <h6><a href="#">Tên</a></h6>
+              </div>
+              </header>
+          </div>
+          <div class="col-md-3">
+              <section>
+                
+              </section>
+          </div>
+          <div class="col-md-6">
+              <article>Content (6 cột)</article>
+          </div>
+          <div class="col-md-3">
+              <aside>Right (3 cột)</aside>
+          </div>
+          <div class="col-md-6">
+              <footer>Footer (6 cột)</footer>
+          </div>
+          <div class="col-md-6">
+              <footer>Footer (6 cột)</footer>
+          </div>
+      </div>
+    </div>
+      </div> -->
+
+      <div class="grid-container-baiviet">
+        <div class="bv1">
+          <div class="form-group">
+            <a class="dropdown-toggle hidden-arrow" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" height="70" width="80" style="border-radius: 50%;margin-right: 90%;">
+            </a>
+        </div>
+        </div>
+        <div class="bv2">
+          <div class="form-group">
+            <h3><a href="#">Tên</a></h3>
+        </div>
+          <div class="form-group" style="margin-top: -35px; margin-left: 70px;">
+              <h5>time</h5>
+          </div>
+        </div>
+        <div class="bv3">
+          <div class="form-group" onclick="tang()">
+            <a href="#" class="btn btn-success" id="tang" >
+            <span class="glyphicon glyphicon-arrow-up" ></span>
+        </a>
+    </div>
+    <div class="form-group">
+        <p id ="vote">0</p>
+    </div>
+    <div class="form-group" onclick="giam()">
+        <a href="#" class="btn btn-danger" id="giam">
+            <span class="glyphicon glyphicon-arrow-down"></span>
+        </a>
+    </div>
+        </div>  
+        <div class="bv4">
+          <div class="form-group">
+            <h3><a href="#">Bài viết Bài viết Bài viết Bài viết Bài viết Bài viết</a></h3>
+        </div>
+        </div>
+        <div class="item5">
+          <div class="form-group">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#binhluan">Bình luận</button>
+            <div id="binhluan" class="collapse">
+                <input type="text" placeholder="Viết bình luận">
+            <button type="submit">Gửi</button>
+            </div>
+        </div>
+        </div>
+       
+      </div>
+</form>
+
+</body>
+</html>
